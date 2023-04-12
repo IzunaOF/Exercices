@@ -1,0 +1,103 @@
+:root {
+    --f-Consolas: "Consolas", cursive;
+}
+
+* {
+    list-style: none;
+    border: none;
+    box-sizing: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    cursor: default;
+}
+main div:nth-child(1) {
+    margin: 2% 2% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.cpf-validator {
+    width: 50%;
+    min-width: max-content;
+    padding: 2rem 2rem 0;
+}
+.cpf-validator .insert {
+    position: relative;
+    font: 600 17px var(--f-Consolas);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 1rem;
+    /* background-color: #f4d; */
+}
+.cpf-validator p {
+    font: 800 32px "Consolas";
+    color: rgb(78, 78, 67);
+}
+.cpf-validator span {
+    color: rgb(255, 132, 0);
+}
+.cpf-validator #cpf-error {
+    color: red;
+    position: absolute;
+    bottom: -8px;
+    width: max-content;
+    font: 600 14px var(--f-Consolas);
+}
+.cpf-validator #countercpf {
+    color: brown;
+    position: absolute;
+    right: 95%;
+    width: max-content;
+    font: 600 14px var(--f-Consolas);
+}
+
+.cpf-validator input {
+    cursor: auto;
+    font: 600 21px var(--f-Consolas);
+    padding: 0 0.5rem;
+    width: 165px;
+    border-bottom: 1px dashed #cfcfcf;
+}
+
+.cpf-validator button {
+    font: 600 17px var(--f-Consolas);
+    padding: 0.5rem 1rem;
+    border-radius: 0.4rem;
+    background-color: #cacaca;
+}
+
+.cpf-list {
+    font: 600 22px var(--f-Consolas);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+#verified-cpf-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+#verified-cpf-list li {
+    font-size: 18px;
+    padding: 0 0.3rem;
+    display: flex;
+    align-items: baseline;
+    gap: 0.3rem;
+    min-width: max-content;
+}
+#verified-cpf-list li:hover {
+    background-color: #c7c7c7;
+}
+#verified-cpf-list li p {
+    color: rgb(87, 89, 88);
+    font: bolder 20px var(--f-Consolas);
+}
+.status {
+    margin-left: 1.2rem;
+}

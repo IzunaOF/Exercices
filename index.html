@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            http-equiv="X-UA-Compatible"
+            content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="index.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <main>
+            <div>
+                <div class="cpf-validator">
+                    <p>Validador de <span>CPF</span></p>
+                    <div class="insert">
+                        <div class="insert">
+                            <input
+                                type="text"
+                                id="cpf"
+                                placeholder="123.456.789-01"
+                                maxlength="14"
+                                autocomplete="off"
+                                oninput="format(event)" />
+                            <span id="countercpf">0/11</span>
+                            <span id="cpf-error"></span>
+                        </div>
+                        <button
+                            type="button"
+                            onclick="listRegister()">
+                            Validar
+                        </button>
+                    </div>
+                </div>
+                <div class="cpf-list">
+                    <p>Lista de validados</p>
+                    <ul id="verified-cpf-list"></ul>
+                </div>
+            </div>
+        </main>
+        <script src="./src/index.js"></script>
+        <script src="./src/CPFMasks.js"></script>
+    </body>
+</html>
